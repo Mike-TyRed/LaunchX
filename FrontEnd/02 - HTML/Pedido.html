@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:white ; font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #F9A799;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family:cursive;
+        }
+
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 10%;
+            height: 429px;
+            /* only for demonstration, should be removed */
+            background: #F4BFAD;
+            padding: 30px;
+            font-family:cursive;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float:left;
+            padding: 20px;
+            width: 90%;
+            background-color: #F5DABD;
+            height: auto;
+            font-family:cursive;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #F9A799;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-family:cursive;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="row" >
+            <img src="img/logo.png" width="350px" height="350px" alt="no lo robes prro">
+            <h2>Realiza tu pedido</h2>
+        </div>
+            
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <a href="index.html">Inicio</a>
+                <li><a href="Pedido.html">Nuevo pedido</a></li>
+                <li><a href="Pastelero.html">Lista de pedidos</a></li>
+            </ul>
+        </nav>
+
+        <article align="center">
+            <h1 align="center">Completa el formulario para continuar</h1>
+            <table align="center">
+                <tr>
+                    <th>Nombre completo</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Fecha de entrega</th>
+                    <th>Dirección</th>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <p>Información personal</p>
+                        <td><input type="text" id="input1" name="input1"></td>
+                        <td><input type="email" id="email1" name="email1"></td>
+                        <td><input type="number" name="number1" id="number1"></td>
+                        <td><input type="date" id="date1" name="date1"></td>
+                        <td><input type="text" id="input2" name="input2"></td> 
+                    </div>
+                </tr>
+            </table>
+
+            <table align="center">
+                <tr>
+                    <th>Sabor</th>
+                    <th>Decoración</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <p>Información sobre el pastel</p>
+
+                        <td><input list="sabores">
+                            <datalist id="sabores">
+                                <option value="Chocolate">
+                                <option value="Vainilla">
+                                <option value="Piña">
+                                <option value="Fresa">
+                            </datalist></td>
+
+                            <td>
+                                <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+                                <label for="topping1">Sprinkles</label><br>
+                                <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+                                <label for="topping2">Chispas de chocolate</label><br>
+                                <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+                                <label for="topping3">Bombones</label><br><br>
+                            </td>
+
+                        <td><input type="number" id="number2" name="number2"></td>
+                    </div>
+                </tr>
+            </table>
+
+            <input type="submit"><br>
+            <input type="Reset"><br>
+        </article>
+    </section>
+
+    <footer>
+        <a href="AboutUs.html">Sobre nosotros</a>
+    </footer>
+
+</body>
+
+</html>

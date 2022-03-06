@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:white ; font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #F9A799;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family:cursive;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 10%;
+            height: 543px;
+            /* only for demonstration, should be removed */
+            background: #F4BFAD;
+            padding: 30px;
+            font-family:cursive;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float:left;
+            padding: 20px;
+            width: 90%;
+            background-color: #F5DABD;
+            height: auto;
+            font-family:cursive;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #F9A799;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-family:cursive;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+            <img src="img/logo.png" width="350px" height="350px" alt="no lo robes prro">
+            <h2>Pastelería Valkyria</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <a href="index.html">Inicio</a>
+                <li><a href="Pedido.html">Nuevo pedido</a></li>
+                <li><a href="Pastelero.html">Lista de pedidos</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 align="center">Menú de sabores</h1>
+            <table align="center">
+                <tr>
+                    <th>Pastel de chocolate</th>
+                    <th>Pastel de vainilla</th>
+                    <th>Pastel de piña</th>
+                    <th>Pastel de fresa</th>
+                </tr>
+                <tr>
+                    <td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.cocinadelirante.com%2Fsites%2Fdefault%2Ffiles%2Fimages%2F2017%2F10%2Fpasteldechocolatevegano.jpg&f=1&nofb=1" width="150px" height="150px"></td>
+                    <td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.cocinadelirante.com%2Fsites%2Fdefault%2Ffiles%2Fimages%2F2017%2F06%2Fesponjosopasteldevanilla.jpg&f=1&nofb=1" width="150px" height="150px"></td>
+                    <td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.GCW7Lgmz8EBFfD8gjnLjuQHaHu%26pid%3DApi&f=1" width="150px" height="150px"></td>
+                    <td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.cocinadelirante.com%2Fsites%2Fdefault%2Ffiles%2Fimages%2F2017%2F10%2Fpasteldefresasconcremafacil.jpg&f=1&nofb=1" width="150px" height="150px"></td>
+                </tr>
+            </table>
+
+            <h1 align="center">Decoraciones</h1>
+            <table align="center">
+                <tr>
+                    <th>Chispas de chocolate</th>
+                    <th>Sprinkles</th>
+                    <th>Bombones</th>
+                </tr>
+                <tr>
+                    <td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffiorentini.com.mx%2Fwp-content%2Fuploads%2F2020%2F09%2FIMG_3156_2.jpg&f=1&nofb=1" width="150px" height="150px"></td>
+                    <td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcmkt-image-prd.freetls.fastly.net%2F0.1.0%2Fps%2F1512639%2F910%2F1138%2Fm2%2Ffpnw%2Fwm1%2Fjgmqf7qxrkhisi6vfadywsiqqjpbmqrwiplyyrqercvip9rzklo9deljqf90a9rn-.jpg%3F1470083011%26s%3D6f911eab320e17366e5c1b93d523930e&f=1&nofb=1" width="150px" height="150px"></td>
+                    <td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.cocinadelirante.com%2Fsites%2Fdefault%2Ffiles%2Fimages%2F2017%2F05%2Fmalvaviscoscaseros.jpg&f=1&nofb=1" width="150px" height="150px"></td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <footer>
+        <a href="AboutUs.html">Sobre nosotros</a>
+    </footer>
+
+</body>
+
+</html>

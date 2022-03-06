@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:white ; font-family:'Courier New', Courier, monospace, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #F9A799;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family:cursive;
+        }
+
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 10%;
+            height: 452px;
+            /* only for demonstration, should be removed */
+            background: #F4BFAD;
+            padding: 30px;
+            font-family:cursive;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float:left;
+            padding: 20px;
+            width: 90%;
+            background-color: #F5DABD;
+            height: auto;
+            font-family:cursive;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #F9A799;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-family:cursive;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="row" >
+            <img src="img/logo.png" width="350px" height="350px" alt="no lo robes prro">
+            <h2>Inventario</h2>
+        </div>
+            
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <a href="index.html">Inicio</a>
+                <li><a href="Pedido.html">Nuevo pedido</a></li>
+                <li><a href="Pastelero.html">Lista de pedidos</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <table border="1px" align="left">
+                <tr>
+                    <th>Sabores</th>
+                    <th>Existencia</th>
+                </tr>
+
+                <tr>
+                    <h3>Sabores</h3>
+                    <td>Chocolate</td>
+                    <td>20 pz</td>
+                </tr>
+                
+                <tr>
+                    <td>Vainilla</td>
+                    <td>24 pz</td>
+                </tr>
+                
+                <tr>
+                    <td>Piña</td>
+                    <td>7 pz</td>
+                </tr>
+
+                <tr>
+                    <td>Fresa</td>
+                    <td>18 pz</td>
+                </tr>
+            </table> 
+
+            <h3 align="center">Pedidos</h3>
+            
+            <table border="1px" align="center">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Sabor</th>
+                    <th>Decoración</th>
+                    <th>Fecha</th>
+                    <th>Dirección</th>
+                </tr>
+
+                <tr>
+                    <td>Miguel Terrazas</td>
+                    <td>123456789</td>
+                    <td>Miguel@gmail.com</td>
+                    <td>Chocolate</td>
+                    <td>Bombones</td>
+                    <td>06/03/2022</td>
+                    <td>Murua</td>
+                </tr>
+                
+                <tr>
+                    <td>Eduardo Reyes</td>
+                    <td>987654321</td>
+                    <td>Eddie@gmail.com</td>
+                    <td>Vainilla</td>
+                    <td>Sprinkles</td>
+                    <td>04/03/2022</td>
+                    <td>La Presa</td>
+                </tr>
+
+                <tr>
+                    <td>Daniel García</td>
+                    <td>654987321</td>
+                    <td>Dany@gmail.com</td>
+                    <td>Fresa</td>
+                    <td>Chispas de chocolate</td>
+                    <td>10/03/2022</td>
+                    <td>Otay</td>
+                </tr>
+            </table> 
+
+            <h3>Decoraciones</h3>
+
+            <table border="1px" align="left" title="Pedidos">
+                <tr>
+                    <th>Decoraciones</th>
+                    <th>Existencia</th>
+                </tr>
+
+                <tr>
+                    <td>Sprinkles</td>
+                    <td>2 kg</td>
+                </tr>
+                
+                <tr>
+                    <td>Chispas de chocolate</td>
+                    <td>8 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Bombones</td>
+                    <td>9 kg</td>
+                </tr>
+            </table> 
+
+        </article>
+    </section>
+
+    <footer>
+        <a href="AboutUs.html">Sobre nosotros</a>
+    </footer>
+
+</body>
+
+</html>

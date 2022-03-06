@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de nosotros</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:white ; font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #F9A799;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family:cursive;
+        }
+
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 10%;
+            height: 355px;
+            /* only for demonstration, should be removed */
+            background: #F4BFAD;
+            padding: 30px;
+            font-family:cursive;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float:left;
+            padding: 20px;
+            width: 90%;
+            background-color: #F5DABD;
+            height: auto;
+            font-family:cursive;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #F9A799;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-family:cursive;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="row" >
+            <img src="img/logo.png" width="350px" height="350px" alt="no lo robes prro">
+            <h2>Valkyries pastelería</h2>
+        </div>
+            
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <a href="index.html">Inicio</a>
+                <li><a href="Pedido.html">Nuevo pedido</a></li>
+                <li><a href="Pastelero.html">Lista de pedidos</a></li>
+            </ul>
+        </nav>
+
+        <article align="center">
+            <h2>Acerca de nosotros.</h2>
+            <p>En Valkyries pastelería nos encargamos de la elaboración de pedidos especiales de postres a petición de los usuarios, quienes pueden elegir la variedad de sabores y decoraciones que disponemos.</p>
+            <h3>Datos de contacto</h3>
+            <p>Email: Valkyriespast@gmail.com</p>
+            <p>Teléfono: 951378462</p>
+            <p>Dirección: Patrimonio Riveraz, Calle Cataluña #104 </p>
+            <p>Horario: 8am - 6pm</p>
+        </article>
+    </section>
+
+    <footer>
+        <a href="AboutUs.html">Sobre nosotros</a>
+    </footer>
+
+</body>
+
+</html>
